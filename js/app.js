@@ -5,3 +5,4 @@ let emailInput = document.querySelector("#email");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 })
+
