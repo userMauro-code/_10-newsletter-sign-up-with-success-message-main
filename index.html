@@ -12,7 +12,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <script defer src="./js/script.js" ></script>
+  <script defer src="./js/app.js" ></script>
 </head>
 <body>
   <main class="main">
@@ -38,10 +38,13 @@
             <input 
               id="email"
               type="email"
+              for= "form__submit"
               required 
               placeholder="email@company.com">
           </div>
-          <input type="submit" value="Subscribe to monthly newsletter">
+          <input class="form__submit" 
+          type="submit" 
+          value="Subscribe to monthly newsletter" validity>
         </form>
       </div>
     </article>

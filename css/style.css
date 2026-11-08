@@ -5,7 +5,8 @@
 }
 
 :root {
-    --red: hsl(4, 100%, 67%);
+    --red: hsla(4, 100%, 67%);
+    --red-error: hsla(4, 100%, 67%, 0.5);
     --blue-800: hsl(234, 29%, 20%);
     --blue-700: hsl(235, 18%, 26%);
     --gray: hsl(0, 0%, 58%);
@@ -123,6 +124,17 @@ body {
     font-size: 1rem;
     color: var(--blue-800);
 }
+
+#email:invalid {
+    border: 2px solid var(--red);
+    background-color: var(--red-error) ;
+    color: var(--red);
+}
+
+#email:invalid:focus {
+    outline: var(--red);
+}
+
 
 .error-message--active {
     display: flex;
