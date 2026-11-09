@@ -1,12 +1,20 @@
-let messageError = document.querySelector(".error-message");
+let messaggeError = document.querySelector(".error-messagge");
 let form = document.querySelector(".form");
-let emailInput = document.querySelector("#email");
+let emailInput = document.getElementById("email");
 let buttonSubmit = document.querySelector(".form__submit");
+let emailValid = document.querySelector(".card--success");
+
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    if(emailInput === false){
-        messageError.toggle= "error-message--active";
-    }
+    if (emailInput.validity.valid === false) {
+    messaggeError.classList.add("error-messagge--active");
+    emailInput.classList.add("email--error")
+}else {
+    messaggeError.classList.remove("error-messagge--active");
+    emailInput.classList.remove("email--error");
+    
+};
 });

@@ -6,7 +6,7 @@
 
 :root {
     --red: hsla(4, 100%, 67%);
-    --red-error: hsla(4, 100%, 67%, 0.5);
+    --red-error: hsla(4, 100%, 67%, 0.151);
     --blue-800: hsl(234, 29%, 20%);
     --blue-700: hsl(235, 18%, 26%);
     --gray: hsl(0, 0%, 58%);
@@ -104,16 +104,13 @@ body {
     align-items: center;
 }
 
-.form__input > .form__label > label {
+.form__input > .form__label > p {
     font-size: 1rem;
     color: var(--blue-800);
     font-weight: var(--font-weight-bold);
 }
 
-.form__input > .form__label > .error-message {
-    font-size: 1rem;
-    color: var(--red);
-    font-weight: var(--font-weight-bold);
+.form__input > .form__label > .error-messagge {
     display: none;
 }
 
@@ -125,17 +122,21 @@ body {
     color: var(--blue-800);
 }
 
-#email:invalid {
+.email--error {
     border: 2px solid var(--red);
     background-color: var(--red-error) ;
     color: var(--red);
 }
 
-#email:invalid:focus {
-    outline: var(--red);
+.email--error:focus {
+    outline: 2px solid var(--red);
 }
 
 
-.error-message--active {
+
+.form__input > .form__label > .error-messagge--active {
     display: flex;
+    font-size: 1rem;
+    color: var(--red);
+    font-weight: var(--font-weight-bold);
 }

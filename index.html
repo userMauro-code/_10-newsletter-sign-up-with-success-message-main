@@ -29,22 +29,22 @@
           <li><img src="./assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>
           <li><img src="./assets/images/icon-list.svg" alt=""> And much more!</li>
         </ul>
-        <form class="form">
+        <form class="form" novalidate>
           <div class="form__input">
             <div class="form__label">
-              <label for="email">Email address</label>
-              <label for="email" class="error-message">Valid email required</label>
+              <p>Email address</p>
+              <label for="email" class="error-messagge">Valid email required</label>
             </div>
             <input 
+              aria-describedby="error-messagge"
               id="email"
               type="email"
-              for= "form__submit"
-              required 
+              required
               placeholder="email@company.com">
           </div>
           <input class="form__submit" 
           type="submit" 
-          value="Subscribe to monthly newsletter" validity>
+          value="Subscribe to monthly newsletter">
         </form>
       </div>
     </article>
