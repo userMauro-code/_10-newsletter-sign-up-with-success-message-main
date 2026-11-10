@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
     messaggeError.classList.remove("error-messagge--active");
     emailInput.classList.remove("email--error");
     console.log(emailInput.value);
-    card.classList.toggle(".remove-card");
-    emailValid.classList.toggle(".card-success--active");
+    card.classList.toggle("remove-card");
+    emailValid.classList.toggle("card-success--active");
 };
 });
