@@ -140,3 +140,12 @@ body {
     color: var(--red);
     font-weight: var(--font-weight-bold);
 }
+
+.main > .remove-card {
+    background-color: red;
+    display: none;
+}
+
+.card-success--active {
+    display: flex;
+}
