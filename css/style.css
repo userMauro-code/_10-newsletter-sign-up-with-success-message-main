@@ -148,4 +148,39 @@ body {
 
 .card-success--active {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 6rem 1rem 2rem 1rem;
+    min-height: 100vh;
+}
+
+.card-success--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-success--content > img {
+    height: 60px;
+    width: 60px;
+}
+
+.card-success--content > .card-success--title {
+    font-size: 2.5rem;
+}
+
+.card-success--content > .card-success--text > .email-user {
+    color: var(--blue-800);
+    font-weight: var(--font-weight-bold);
+}
+
+.card-success--active > .button-success {
+    color: var(--white);
+    font-weight: var(--font-weight-bold);
+    padding: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue-800);
+
 }
