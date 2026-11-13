@@ -1,11 +1,10 @@
 let messaggeError = document.querySelector(".error-messagge");
 let form = document.querySelector(".form");
 let emailInput = document.getElementById("email");
-let buttonSubmit = document.querySelector(".form__submit");
 let card = document.querySelector(".card")
 let emailValid = document.querySelector(".card-success");
 let emailSpan = document.querySelector(".email-user");
-let closeSuccess = document.querySelector(".button-success");
+const closeSuccess = document.querySelector(".button-success");
 
 
 
